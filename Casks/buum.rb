@@ -2,10 +2,10 @@ cask "buum" do
   version "1.0.0"
   sha256 "2d637ea887af9296e5996458956c67763ac2d125e7459d7a8dc11abad72c031c"
 
-  url "https://github.com/emreerinc/buum/releases/download/v#{version}/Buum-#{version}.zip"
+  url "https://github.com/emreerinc/buum-app/releases/download/v#{version}/Buum-#{version}.zip"
   name "Buum"
   desc "Menu bar app to update Homebrew and Mac App Store apps"
-  homepage "https://github.com/emreerinc/buum"
+  homepage "https://github.com/emreerinc/buum-app"
 
   depends_on macos: ">= :ventura"
 
