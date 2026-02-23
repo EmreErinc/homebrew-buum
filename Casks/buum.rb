@@ -1,6 +1,6 @@
 cask "buum" do
-  version "1.0.0"
-  sha256 "2d637ea887af9296e5996458956c67763ac2d125e7459d7a8dc11abad72c031c"
+  version "1.1.0"
+  sha256 "e2e68f0d8a0f824eda37f98c7ab3e91a4f53baf37f6bf584c45346d1fd5955ce"
 
   url "https://github.com/emreerinc/buum-app/releases/download/v#{version}/Buum-#{version}.zip"
   name "Buum"
