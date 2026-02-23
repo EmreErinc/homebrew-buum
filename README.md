@@ -9,6 +9,10 @@ brew tap emreerinc/buum
 brew install --cask buum
 ```
 
+> **First launch on a new Mac:** macOS may show a security warning because the app is not yet notarized.
+> Go to **System Settings → Privacy & Security** → scroll down → click **"Open Anyway"**.
+> After that, Buum runs normally without any warning.
+
 ## Uninstall
 
 ```bash

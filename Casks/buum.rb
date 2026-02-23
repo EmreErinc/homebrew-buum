@@ -7,6 +7,9 @@ cask "buum" do
   desc "Menu bar app to update Homebrew and Mac App Store apps"
   homepage "https://github.com/emreerinc/buum-app"
 
+  # Not notarized yet — first launch requires:
+  # System Settings → Privacy & Security → Open Anyway
+
   depends_on macos: ">= :ventura"
 
   app "Buum.app"
