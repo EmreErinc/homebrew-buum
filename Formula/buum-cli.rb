@@ -1,15 +1,18 @@
 class BuumCli < Formula
   desc "Terminal tool to update Homebrew and Mac App Store apps"
   homepage "https://github.com/EmreErinc/buum-cli"
-  url "https://github.com/EmreErinc/buum-cli/archive/refs/tags/v1.0.0.tar.gz"
-  sha256 "80d8904126fc2e7e714604708d2d9b85d535b443f42b11f7eada6983f70dfac3"
+  version "1.0.0"
   license "GPL-3.0-only"
 
-  depends_on macos: :ventura
+  on_arm do
+    url "https://github.com/EmreErinc/buum-cli/releases/download/v1.0.0/buum-cli-1.0.0-arm64-apple-macosx.tar.gz"
+    sha256 "5e85894e78f181162217b5f0ce7f40ff67201562925936ee92fd1fd0853e393f"
+  end
+
+  depends_on :macos
 
   def install
-    system "swift", "build", "-c", "release", "--disable-sandbox"
-    bin.install ".build/release/buum-cli"
+    bin.install "buum-cli"
   end
 
   test do
