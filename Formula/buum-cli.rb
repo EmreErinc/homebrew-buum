@@ -5,7 +5,6 @@ class BuumCli < Formula
   sha256 "80d8904126fc2e7e714604708d2d9b85d535b443f42b11f7eada6983f70dfac3"
   license "GPL-3.0-only"
 
-  depends_on xcode: ["15.0", :build]
   depends_on macos: :ventura
 
   def install
@@ -14,6 +13,6 @@ class BuumCli < Formula
   end
 
   test do
-    assert_match "buum-cli", shell_output("#{bin}/buum-cli --version")
+    assert_match version.to_s, shell_output("#{bin}/buum-cli --version")
   end
 end
